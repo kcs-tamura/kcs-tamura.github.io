@@ -1,1 +1,1 @@
-# kcs_tamura.github.io
+# kcs-tamura.github.io
