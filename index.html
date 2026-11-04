@@ -1,9 +1,213 @@
-<html>
-  <header>
-    <title>GithubPages反映テスト</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kcs-tamura | Tech Lead (Game Dev) &amp; Full-stack Engineer</title>
+  <meta name="description" content="Personal site of kcs-tamura: Tech Lead (Game Dev) and full-stack engineer working on Unity backends, real-time systems and authentication.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate" hreflang="en" href="https://kcs-tamura.github.io/">
+  <link rel="alternate" hreflang="ja" href="https://kcs-tamura.github.io/ja/">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="header__logo">
+        <img src="/favicon.svg" alt="" class="header__logo-img">
+        <span class="header__logo-text">kcs-tamura<small>Game Dev &amp; Backend</small></span>
+      </a>
+      <nav class="header__nav" aria-label="Main">
+        <a href="#projects" class="header__nav-link">Projects</a>
+        <a href="#about" class="header__nav-link">About</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
+        <a href="/ja/" class="header__lang" hreflang="ja" lang="ja">日本語</a>
+      </nav>
+      <button class="header__burger" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
-  <body>
-    GithubPagesに反映デキタヨー
-    
-  </body>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-circle hero__bg-circle--1"></div>
+        <div class="hero__bg-circle hero__bg-circle--2"></div>
+        <div class="hero__bg-grid"></div>
+      </div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Tech Lead / Full-stack Engineer</p>
+        <h1 class="hero__title">
+          Backends for games,<br>
+          real-time by design,<br>
+          <span class="hero__title-accent">secure by default.</span>
+        </h1>
+        <p class="hero__body">
+          I'm Tamura. I build backend systems for Unity-based games,<br>
+          real-time architectures and authentication infrastructure.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="hero__btn hero__btn--primary">See projects</a>
+          <a href="https://github.com/kcs-tamura" class="hero__btn hero__btn--ghost">GitHub</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true"><span class="hero__scroll-line"></span></div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="projects__header">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">What I've built</h2>
+          <p class="section-body">From real-time score servers to passwordless login, a few things I work on.</p>
+        </div>
+        <div class="projects__grid">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🎮</div>
+            <div class="card__body">
+              <p class="card__kicker">Real-time / Go</p>
+              <h3 class="card__title">Unity Score Server</h3>
+              <p class="card__desc">Real-time score server built with Go. Webhook-based live updates, designed for low latency and scalability.</p>
+              <ul class="tags"><li class="tag">Go</li><li class="tag">Webhooks</li><li class="tag">Unity</li></ul>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🤖</div>
+            <div class="card__body">
+              <p class="card__kicker">Bot / Linux</p>
+              <h3 class="card__title">Discord Bot</h3>
+              <p class="card__desc">Voice-enabled Discord bot running on Linux, with custom TTS integration.</p>
+              <ul class="tags"><li class="tag">Linux</li><li class="tag">TTS</li><li class="tag">Discord</li></ul>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🔐</div>
+            <div class="card__body">
+              <p class="card__kicker">Authentication</p>
+              <h3 class="card__title">Auth System</h3>
+              <p class="card__desc">OIDC-based authentication with Passkey (WebAuthn) login and an admin dashboard.</p>
+              <ul class="tags"><li class="tag">OIDC</li><li class="tag">Passkey</li><li class="tag">Admin UI</li></ul>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🔑</div>
+            <div class="card__body">
+              <p class="card__kicker">Redmine plugin</p>
+              <h3 class="card__title">Redmine Passkey</h3>
+              <p class="card__desc">Passwordless login for Redmine using WebAuthn. Better security and a smoother sign-in.</p>
+              <ul class="tags"><li class="tag">WebAuthn</li><li class="tag">Redmine</li><li class="tag">Passwordless</li></ul>
+              <a class="card__link" href="https://github.com/kcs-tamura/redmine_passkey">View repository</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about__inner">
+        <div>
+          <p class="section-label">About</p>
+          <h2 class="section-title">About me</h2>
+          <p class="section-body">
+            I work across Unity, C#, C++ and Go, with a focus on backend and real-time systems, and on authentication infrastructure.
+          </p>
+          <div class="about__values">
+            <div class="about__value">
+              <div class="about__value-icon" aria-hidden="true">⚡</div>
+              <div>
+                <p class="about__value-label">Real-time systems</p>
+                <p class="about__value-body">Designing low-latency, scalable architectures with webhooks and APIs for live game experiences.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon" aria-hidden="true">🔐</div>
+              <div>
+                <p class="about__value-label">Authentication</p>
+                <p class="about__value-body">OIDC, OAuth2, Passkey (WebAuthn) and 2FA, plus mail security with DMARC, SPF and DKIM.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon" aria-hidden="true">🎮</div>
+              <div>
+                <p class="about__value-label">Game development</p>
+                <p class="about__value-body">Tech lead for Unity-based games, bridging client code and server infrastructure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="about__card">
+          <h3 class="about__card-title">Tech stack</h3>
+          <dl class="about__dl">
+            <div class="about__dl-row">
+              <dt>Languages</dt>
+              <dd><ul class="tags"><li class="tag">Go</li><li class="tag">C#</li><li class="tag">C++</li><li class="tag">TypeScript</li></ul></dd>
+            </div>
+            <div class="about__dl-row">
+              <dt>Backend &amp; Infrastructure</dt>
+              <dd><ul class="tags"><li class="tag">API design</li><li class="tag">Webhooks</li><li class="tag">Docker</li><li class="tag">Linux</li><li class="tag">Cloudflare</li><li class="tag">Unity</li></ul></dd>
+            </div>
+            <div class="about__dl-row">
+              <dt>Authentication &amp; Security</dt>
+              <dd><ul class="tags"><li class="tag">OIDC / OAuth2</li><li class="tag">Passkey (WebAuthn)</li><li class="tag">2FA</li><li class="tag">DMARC / SPF / DKIM</li></ul></dd>
+            </div>
+            <div class="about__dl-row">
+              <dt>GitHub</dt>
+              <dd><a class="about__link" href="https://github.com/kcs-tamura">github.com/kcs-tamura</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container contact__inner">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-body">The best way to reach me is through GitHub. Issues and discussions are welcome.</p>
+        <div class="contact__methods">
+          <a href="https://github.com/kcs-tamura" class="contact__method">
+            <div class="contact__method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact__method-label">GitHub</p>
+              <p class="contact__method-value">github.com/kcs-tamura</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="/favicon.svg" alt="" class="footer__logo-img">
+          <span>kcs-tamura</span>
+        </div>
+        <p class="footer__tagline">Backend, real-time and authentication for games.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <p class="footer__nav-title">Links</p>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">&copy; <span id="year"></span> kcs-tamura. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
 </html>
